@@ -11,7 +11,6 @@ char	*ft_strrev(char *str)
 	i = 0;
 	j = 0;
 	tmp = '\0';
-	printf("b");
 	while (str != '\0')
 		i++;
 	while (j < i)
@@ -30,10 +29,10 @@ int	main(void)
 	char	*str;
 	int	i;
 
-	i = - 1;
-	str = "ab";
+	i = 1;
+	str = "abfkbsuv";
 	str = ft_strrev(str);
-	while (str != '\0')
+	while (str[i])
 		write(1, &str[i++], 1);
 	return (0);
 }

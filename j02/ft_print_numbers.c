@@ -1,9 +1,25 @@
-#include <stdlib.h>
+#include <unistd.h>
 
-int	main(int argc, char **argv)
+void ft_putchar(char c)
 {
-	char	number;
+	write(1, &c,1);
+}
 
-	number 
-	
+void ft_print_numbers(void)
+{
+	char n;
+
+	n = '0';
+	while (n <= '9')
+	{
+		ft_putchar(n);
+		n++;
+	}
+}
+
+int main(void)
+{
+	ft_print_numbers();
+
+	return (0);
 }
