@@ -1,7 +1,3 @@
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-
 char *ft_strcpy(char *dest, char *src)
 {
 	int i;

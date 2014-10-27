@@ -1,13 +1,11 @@
-void ft_putchar(char c);
+#include <unistd.h>
 
-void ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while (str[i])
-	{
-		ft_putchar(str[i]);
+	while (str[i] != '\0')
 		i++;
-	}
+	write(1, &*str, i);
 }
